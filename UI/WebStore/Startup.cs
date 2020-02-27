@@ -1,4 +1,5 @@
 ﻿using System;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -13,6 +14,7 @@ using WebStore.Clients.Values;
 using WebStore.DAL.Context;
 using WebStore.Data;
 using WebStore.Domain.Entities.Identity;
+using WebStore.Infrastructure.AutoMapper;
 using WebStore.Interfaces.Api;
 using WebStore.Interfaces.Services;
 using WebStore.Services.Product;
@@ -30,6 +32,13 @@ namespace WebStore
             //services.AddDbContext<WebStoreContext>(opt => 
             //    opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             //services.AddTransient<WebStoreContextInitializer>();
+
+            services.AddAutoMapper(opt =>
+            {
+                //указать либо всю сборку typeof(Startup).Assembly, либо AddProfile
+                opt.AddProfile<ViewModelMapping>();
+                opt.AddProfile<DTOMapping>();
+            }, typeof(Startup)/*.Assembly*/);
 
             services.AddSingleton<IEmployeesData, EmployeesClient>();
 
