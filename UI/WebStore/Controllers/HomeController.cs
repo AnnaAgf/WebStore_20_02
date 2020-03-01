@@ -1,10 +1,24 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace WebStore.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index() => View();
+        // добавление сиситемы логирования: либо через конструктор, либо через метод.
+        // запрашиваем объект ILogger с типом HomeController
+        // сохраненние логгера в приватном поле
+        private readonly ILogger<HomeController> _Logger;
+
+        public HomeController(ILogger<HomeController> Logger) => _Logger = Logger;
+
+        public IActionResult Index()
+        {
+            // исп логирование внутри экшена
+            _Logger.LogInformation("Запрос главной страницы!");
+            return View();
+        }
+
         public IActionResult Blog() => View();
         public IActionResult BlogSingle() => View();
         public IActionResult Cart() => View();
