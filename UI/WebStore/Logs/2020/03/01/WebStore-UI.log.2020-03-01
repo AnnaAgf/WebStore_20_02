@@ -1,0 +1,83 @@
+2020-03-01 17:07:41,952 [9] ?     - Request starting HTTP/1.1 GET http://localhost:58105/  
+2020-03-01 17:07:44,235 [5] ?     - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller WebStore.Controllers.HomeController (WebStore).
+2020-03-01 17:07:44,249 [5] ?     - Executing action method WebStore.Controllers.HomeController.Index (WebStore) - Validation state: Valid
+2020-03-01 17:07:44,249 [5] ?     - Запрос главной страницы!
+2020-03-01 17:07:44,251 [5] ?     - Executed action method WebStore.Controllers.HomeController.Index (WebStore), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5328ms.
+2020-03-01 17:07:44,273 [5] ?     - Executing ViewResult, running view Index.
+2020-03-01 17:07:44,635 [5] ?     - Executed ViewResult - view Index executed in 373.2626ms.
+2020-03-01 17:07:44,636 [5] ?     - Executed action WebStore.Controllers.HomeController.Index (WebStore) in 400.5391ms
+2020-03-01 17:07:44,645 [5] ?     - Request finished in 2696.1746ms 200 text/html; charset=utf-8
+2020-03-01 17:09:00,162 [7] ?     - Request starting HTTP/1.1 GET http://localhost:58105/Catalog/Shop  
+2020-03-01 17:09:00,179 [7] ?     - Route matched with {action = "Shop", controller = "Catalog", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Shop(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32], AutoMapper.IMapper) on controller WebStore.Controllers.CatalogController (WebStore).
+2020-03-01 17:09:00,381 [7] ?     - Executing action method WebStore.Controllers.CatalogController.Shop (WebStore) - Validation state: Valid
+2020-03-01 17:09:00,420 [7] ?     - Executed action method WebStore.Controllers.CatalogController.Shop (WebStore), returned result Microsoft.AspNetCore.Mvc.ViewResult in 39.365ms.
+2020-03-01 17:09:00,422 [7] ?     - Executing ViewResult, running view Shop.
+2020-03-01 17:09:00,471 [7] ?     - Executed ViewResult - view Shop executed in 51.3653ms.
+2020-03-01 17:09:00,472 [7] ?     - Executed action WebStore.Controllers.CatalogController.Shop (WebStore) in 292.6848ms
+2020-03-01 17:09:00,472 [7] ?     - Request finished in 309.689ms 200 text/html; charset=utf-8
+2020-03-01 17:09:18,265 [20] ?     - Request starting HTTP/1.1 POST http://localhost:58105/Account/Logout application/x-www-form-urlencoded 225
+2020-03-01 17:09:18,281 [20] ?     - Route matched with {action = "Logout", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller WebStore.Controllers.AccountController (WebStore).
+2020-03-01 17:09:18,307 [20] ?     - Executing action method WebStore.Controllers.AccountController.Logout (WebStore) - Validation state: Valid
+2020-03-01 17:09:18,313 [20] ?     - AuthenticationScheme: Identity.Application signed out.
+2020-03-01 17:09:18,313 [20] ?     - AuthenticationScheme: Identity.External signed out.
+2020-03-01 17:09:18,313 [20] ?     - AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2020-03-01 17:09:18,313 [20] ?     - Пользователь test1 вышел в систему
+2020-03-01 17:09:18,314 [20] ?     - Executed action method WebStore.Controllers.AccountController.Logout (WebStore), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 6.1907ms.
+2020-03-01 17:09:18,322 [20] ?     - Executing RedirectResult, redirecting to /.
+2020-03-01 17:09:18,322 [20] ?     - Executed action WebStore.Controllers.AccountController.Logout (WebStore) in 41.0553ms
+2020-03-01 17:09:18,323 [20] ?     - Request finished in 58.244ms 302 
+2020-03-01 17:09:18,326 [7] ?     - Request starting HTTP/1.1 GET http://localhost:58105/  
+2020-03-01 17:09:18,326 [7] ?     - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller WebStore.Controllers.HomeController (WebStore).
+2020-03-01 17:09:18,326 [7] ?     - Executing action method WebStore.Controllers.HomeController.Index (WebStore) - Validation state: Valid
+2020-03-01 17:09:18,327 [7] ?     - Запрос главной страницы!
+2020-03-01 17:09:18,327 [7] ?     - Executed action method WebStore.Controllers.HomeController.Index (WebStore), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0244ms.
+2020-03-01 17:09:18,327 [7] ?     - Executing ViewResult, running view Index.
+2020-03-01 17:09:18,346 [7] ?     - Executed ViewResult - view Index executed in 19.3488ms.
+2020-03-01 17:09:18,346 [7] ?     - Executed action WebStore.Controllers.HomeController.Index (WebStore) in 19.5686ms
+2020-03-01 17:09:18,346 [7] ?     - Request finished in 20.3529ms 200 text/html; charset=utf-8
+2020-03-01 17:09:21,315 [20] ?     - Request starting HTTP/1.1 GET http://localhost:58105/Account/Login  
+2020-03-01 17:09:21,316 [20] ?     - Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller WebStore.Controllers.AccountController (WebStore).
+2020-03-01 17:09:21,317 [20] ?     - Executing action method WebStore.Controllers.AccountController.Login (WebStore) - Validation state: Valid
+2020-03-01 17:09:21,317 [20] ?     - Executed action method WebStore.Controllers.AccountController.Login (WebStore), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.272ms.
+2020-03-01 17:09:21,325 [20] ?     - Executing ViewResult, running view Login.
+2020-03-01 17:09:21,356 [20] ?     - Executed ViewResult - view Login executed in 38.7387ms.
+2020-03-01 17:09:21,356 [20] ?     - Executed action WebStore.Controllers.AccountController.Login (WebStore) in 39.3898ms
+2020-03-01 17:09:21,356 [20] ?     - Request finished in 41.4702ms 200 text/html; charset=utf-8
+2020-03-01 17:09:37,361 [20] ?     - Request starting HTTP/1.1 POST http://localhost:58105/Account/Login application/x-www-form-urlencoded 256
+2020-03-01 17:09:37,374 [20] ?     - Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(WebStore.Domain.ViewModels.Identity.LoginViewModel) on controller WebStore.Controllers.AccountController (WebStore).
+2020-03-01 17:09:37,387 [20] ?     - Executing action method WebStore.Controllers.AccountController.Login (WebStore) - Validation state: Valid
+2020-03-01 17:09:37,515 [24] ?     - Invalid password for user 6c055884-4437-4f04-b102-7737ce2927c1.
+2020-03-01 17:09:37,520 [24] ?     - User 6c055884-4437-4f04-b102-7737ce2927c1 failed to provide the correct password.
+2020-03-01 17:09:37,522 [24] ?     - Ошибка при входе пользователя Administrator в систему
+2020-03-01 17:09:37,523 [24] ?     - Executed action method WebStore.Controllers.AccountController.Login (WebStore), returned result Microsoft.AspNetCore.Mvc.ViewResult in 136.5138ms.
+2020-03-01 17:09:37,527 [24] ?     - Executing ViewResult, running view Login.
+2020-03-01 17:09:37,529 [24] ?     - Executed ViewResult - view Login executed in 2.1118ms.
+2020-03-01 17:09:37,531 [24] ?     - Executed action WebStore.Controllers.AccountController.Login (WebStore) in 156.0891ms
+2020-03-01 17:09:37,532 [24] ?     - Request finished in 170.1181ms 200 text/html; charset=utf-8
+2020-03-01 17:09:48,293 [20] ?     - Request starting HTTP/1.1 POST http://localhost:58105/Account/Login application/x-www-form-urlencoded 256
+2020-03-01 17:09:48,293 [20] ?     - Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(WebStore.Domain.ViewModels.Identity.LoginViewModel) on controller WebStore.Controllers.AccountController (WebStore).
+2020-03-01 17:09:48,293 [20] ?     - Executing action method WebStore.Controllers.AccountController.Login (WebStore) - Validation state: Valid
+2020-03-01 17:09:48,385 [21] ?     - AuthenticationScheme: Identity.Application signed in.
+2020-03-01 17:09:48,385 [21] ?     - Пользователь Administrator вошёл в систему
+2020-03-01 17:09:48,385 [21] ?     - Executed action method WebStore.Controllers.AccountController.Login (WebStore), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 92.0107ms.
+2020-03-01 17:09:48,385 [21] ?     - Executing RedirectResult, redirecting to /.
+2020-03-01 17:09:48,385 [21] ?     - Executed action WebStore.Controllers.AccountController.Login (WebStore) in 92.6493ms
+2020-03-01 17:09:48,386 [21] ?     - Request finished in 93.2706ms 302 
+2020-03-01 17:09:48,388 [19] ?     - Request starting HTTP/1.1 GET http://localhost:58105/  
+2020-03-01 17:09:48,389 [19] ?     - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller WebStore.Controllers.HomeController (WebStore).
+2020-03-01 17:09:48,389 [19] ?     - Executing action method WebStore.Controllers.HomeController.Index (WebStore) - Validation state: Valid
+2020-03-01 17:09:48,389 [19] ?     - Запрос главной страницы!
+2020-03-01 17:09:48,389 [19] ?     - Executed action method WebStore.Controllers.HomeController.Index (WebStore), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0144ms.
+2020-03-01 17:09:48,389 [19] ?     - Executing ViewResult, running view Index.
+2020-03-01 17:09:48,397 [19] ?     - Executed ViewResult - view Index executed in 7.7513ms.
+2020-03-01 17:09:48,397 [19] ?     - Executed action WebStore.Controllers.HomeController.Index (WebStore) in 7.8977ms
+2020-03-01 17:09:48,397 [19] ?     - Request finished in 8.6775ms 200 text/html; charset=utf-8
+2020-03-01 17:12:37,784 [7] ?     - Request starting HTTP/1.1 GET http://localhost:58105/  
+2020-03-01 17:12:37,943 [7] ?     - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller WebStore.Controllers.HomeController (WebStore).
+2020-03-01 17:12:37,969 [7] ?     - Executing action method WebStore.Controllers.HomeController.Index (WebStore) - Validation state: Valid
+2020-03-01 17:12:37,969 [7] ?     - Запрос главной страницы!
+2020-03-01 17:12:37,971 [7] ?     - Executed action method WebStore.Controllers.HomeController.Index (WebStore), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5393ms.
+2020-03-01 17:12:38,001 [7] ?     - Executing ViewResult, running view Index.
+2020-03-01 17:12:39,166 [7] ?     - Executed ViewResult - view Index executed in 1177.5922ms.
+2020-03-01 17:12:39,166 [7] ?     - Executed action WebStore.Controllers.HomeController.Index (WebStore) in 1222.8563ms
+2020-03-01 17:12:39,174 [7] ?     - Request finished in 1392.0941ms 200 text/html; charset=utf-8

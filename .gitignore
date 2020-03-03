@@ -26,6 +26,7 @@ bld/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
+[Ll]ogs/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
@@ -338,10 +339,10 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
-/WebStore/wwwroot/lib
-/WebStore/wwwroot/css/site.min.css
-/WebStore/wwwroot/css/site.css
-/WebStore/wwwroot/js/site.min.js.map
-/WebStore/wwwroot/js/site.min.js.gz
-/WebStore/wwwroot/js/site.min.js
-/WebStore/wwwroot/js/site.js
+/UI/WebStore/wwwroot/js/site.min.js.map
+/UI/WebStore/wwwroot/js/site.min.js.gz
+/UI/WebStore/wwwroot/js/site.min.js
+/UI/WebStore/wwwroot/js/site.js
+/UI/WebStore/wwwroot/lib
+/UI/WebStore/Logs/WebStore[2020-03-01T18-41-27].log.json
+/UI/WebStore/Logs/WebStore[2020-03-01T18-41-27].log.json
